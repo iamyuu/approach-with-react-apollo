@@ -1,0 +1,62 @@
+import { CodeSurferLayout, Code } from 'code-surfer'
+
+<CodeSurferLayout>
+  <Code
+    code={require('!!raw-loader!./code.0.js').default}
+    lang="jsx"
+    title="Approach Using HOCs"
+  />
+  <Code
+    code={require('!!raw-loader!./code.1.js').default}
+    focus="14:20"
+    lang="jsx"
+    title="Approach Using HOCs"
+    subtitle="define query and mutation"
+  />
+  <Code
+    code={require('!!raw-loader!./code.2.js').default}
+    focus="2:14"
+    lang="jsx"
+    title="Approach Using HOCs"
+    subtitle="loading and error state handling"
+  />
+  <Code
+    code={require('!!raw-loader!./code.3.js').default}
+    focus="16,21"
+    lang="jsx"
+    title="Approach Using HOCs"
+    subtitle="call removeEmployee function"
+  />
+  <Code
+    code={require('!!raw-loader!./code.1.js').default}
+    focus="13:21"
+    lang="jsx"
+    title="Approach Using HOCs"
+  />
+</CodeSurferLayout>
+
+---
+
+# The Good
+
+- Fetching is encapsulated and declarative
+- Data dependencies and expressed alogside <br /> where they're used
+- All operations are in a single scope
+- Error states can be handled in a generalized manner
+
+---
+
+# The Bad
+
+- ~~SelectionSets are error-prone~~
+- ~~Multiple HOCs can produce bugs~~
+
+---
+
+# The Meh
+
+- ~~HOCs are difficult to understand~~
+- ~~Options need to be computed far from the component~~
+- ~~Welcome back to callback hell~~
+- ~~The component hierarchy is extra deep~~
+- Loading and ~~error state~~ require boilerplate
