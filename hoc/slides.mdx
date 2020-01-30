@@ -1,0 +1,50 @@
+import { CodeSurferLayout, CodeSurferColumnLayout, Code } from 'code-surfer'
+
+<CodeSurferLayout>
+  <Code
+    code={require('!!raw-loader!./code.0.js').default}
+    lang="jsx"
+    title="Approach Using HOCs"
+  />
+  <Code
+    code={require('!!raw-loader!./code.1.js').default}
+    focus="14:20"
+    lang="jsx"
+    title="Approach Using HOCs"
+    subtitle="define query and mutation"
+  />
+  <Code
+    code={require('!!raw-loader!./code.2.js').default}
+    focus="2:14"
+    lang="jsx"
+    title="Approach Using HOCs"
+    subtitle="loading and error state handling"
+  />
+  <Code
+    code={require('!!raw-loader!./code.3.js').default}
+    focus="16,21"
+    lang="jsx"
+    title="Approach Using HOCs"
+    subtitle="call removeEmployee function"
+  />
+  <Code
+    code={require('!!raw-loader!./code.1.js').default}
+    focus="13:21"
+    lang="jsx"
+    title="Approach Using HOCs"
+  />
+</CodeSurferLayout>
+
+---
+
+<CodeSurferColumnLayout>
+  ```js 2
+  console.log(1);
+  console.log(2);
+  ```
+
+  # The Good
+
+  - Fetching is encapsulated and declarative
+  - Data dependencies and expressed alogside <br /> where they're used
+</CodeSurferColumnLayout>
