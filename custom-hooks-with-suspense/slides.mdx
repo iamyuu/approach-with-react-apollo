@@ -4,6 +4,79 @@ import { CodeSurferLayout, Code } from 'code-surfer'
 
 ---
 
+<CodeSurferLayout>
+  <Code
+    code={require('!!raw-loader!./custom-hooks-with-suspense.1.js').default}
+    lang="jsx"
+    title="Custom Hooks"
+  />
+  <Code
+    code={require('!!raw-loader!./custom-hooks-with-suspense.2.js').default}
+    focus="4:7"
+    lang="jsx"
+    title="Custom Hooks"
+    subtitle="useQuery functions"
+  />
+  <Code
+    code={require('!!raw-loader!./custom-hooks-with-suspense.3.js').default}
+    focus="7:9"
+    lang="jsx"
+    title="Custom Hooks"
+    subtitle="Throw API error"
+  />
+  <Code
+    code={require('!!raw-loader!./custom-hooks-with-suspense.4.js').default}
+    focus="5:8"
+    lang="jsx"
+    title="Custom Hooks"
+    subtitle="suspend options"
+  />
+  <Code
+    code={require('!!raw-loader!./custom-hooks-with-suspense.js').default}
+    focus="4:17"
+    lang="jsx"
+    title="Custom Hooks"
+    subtitle="Final useQuery functions"
+  />
+</CodeSurferLayout>
+
+---
+
+# Wrap App Component
+
+---
+
+<CodeSurferLayout>
+  <Code
+    code={require('!!raw-loader!./app.js').default}
+    focus="3,7"
+    lang="jsx"
+    title="Application Wrapper"
+  />
+</CodeSurferLayout>
+
+---
+
+## Let's change the hooks approach
+
+---
+
+<CodeSurferLayout>
+  <Code
+    code={require('!!raw-loader!./approach-with-hooks.before.js').default}
+    lang="jsx"
+    title="Approach Using Hooks"
+  />
+  <Code
+    code={require('!!raw-loader!./approach-with-hooks.after.js').default}
+    focus="5,11:13"
+    lang="jsx"
+    title="Approach Using Hooks"
+  />
+</CodeSurferLayout>
+
+---
+
 # The Good ✅
 
 - Fetching is encapsulated and declarative

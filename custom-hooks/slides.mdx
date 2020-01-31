@@ -70,6 +70,21 @@ import { CodeSurferLayout, Code } from 'code-surfer'
 
 ---
 
+# Wrap App Component
+
+---
+
+<CodeSurferLayout>
+  <Code
+    code={require('!!raw-loader!./app.js').default}
+    focus="3,5"
+    lang="jsx"
+    title="Application Wrapper"
+  />
+</CodeSurferLayout>
+
+---
+
 ## Let's change the hooks approach
 
 ---
@@ -82,12 +97,7 @@ import { CodeSurferLayout, Code } from 'code-surfer'
   />
   <Code
     code={require('!!raw-loader!./approach-with-hooks.after.js').default}
-    lang="jsx"
-    title="Approach Using Hooks"
-  />
-  <Code
-    code={require('!!raw-loader!./approach-with-hooks.after.js').default}
-    focus="5,15:17"
+    focus="5,11:17"
     lang="jsx"
     title="Approach Using Hooks"
   />
