@@ -2,59 +2,59 @@ import { CodeSurferLayout, Code } from 'code-surfer'
 
 <CodeSurferLayout>
   <Code
-    code={require('!!raw-loader!./code.0.js').default}
+    code={require('!!raw-loader!../code.0.js').default}
     lang="jsx"
-    title="Approach Using HOCs"
+    title="Approach Using Render Props"
   />
   <Code
     code={require('!!raw-loader!./code.1.js').default}
-    focus="14:20"
+    focus="2:5"
     lang="jsx"
-    title="Approach Using HOCs"
-    subtitle="define query and mutation"
+    title="Approach Using Render Props"
+    subtitle="Query results and mutation functions"
   />
   <Code
     code={require('!!raw-loader!./code.2.js').default}
-    focus="2:14"
+    focus="7:19,25"
     lang="jsx"
-    title="Approach Using HOCs"
-    subtitle="loading and error state handling"
+    title="Approach Using Render Props"
+    subtitle="Loading and error state handling"
   />
   <Code
-    code={require('!!raw-loader!./code.3.js').default}
-    focus="16,21"
+    code={require('!!raw-loader!./code.2.js').default}
+    focus="5,24"
     lang="jsx"
-    title="Approach Using HOCs"
-    subtitle="call removeEmployee function"
+    title="Approach Using Render Props"
+    subtitle="Call removeEmployee function"
   />
   <Code
-    code={require('!!raw-loader!./code.1.js').default}
-    focus="13:21"
+    code={require('!!raw-loader!./code.js').default}
+    focus="2:7"
     lang="jsx"
-    title="Approach Using HOCs"
+    title="Approach Using Render Props"
   />
 </CodeSurferLayout>
 
 ---
 
-# The Good
+# The Good ✅
 
 - Fetching is encapsulated and declarative
 - Data dependencies and expressed alogside <br /> where they're used
 
 ---
 
-# The Bad
+# The Bad 🔴
 
 - ~~SelectionSets are error-prone~~
-- ~~Multiple HOCs can produce bugs~~
+- ~~Multiple Render Props can produce bugs~~
 
 ---
 
-# The Meh
+# The Meh 🤷‍♀️
 
-- ~~HOCs are difficult to understand~~
+- ~~Render Props are difficult to understand~~
 - ~~Options need to be computed far from the component~~
-- Welcome back to callback hell
+- Welcome back to callback hell.
 - The component hierarchy is extra deep
 - Loading and error state require boilerplate

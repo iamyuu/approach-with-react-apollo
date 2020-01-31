@@ -2,61 +2,60 @@ import { CodeSurferLayout, Code } from 'code-surfer'
 
 <CodeSurferLayout>
   <Code
-    code={require('!!raw-loader!./code.0.js').default}
+    code={require('!!raw-loader!../code.0.js').default}
     lang="jsx"
-    title="Approach Using HOCs"
+    title="Approach Using Hooks"
   />
   <Code
     code={require('!!raw-loader!./code.1.js').default}
-    focus="14:20"
+    focus="4:7"
     lang="jsx"
-    title="Approach Using HOCs"
-    subtitle="define query and mutation"
+    title="Approach Using Hooks"
+    subtitle="Define query and mutation"
   />
   <Code
     code={require('!!raw-loader!./code.2.js').default}
-    focus="2:14"
+    focus="9:21"
     lang="jsx"
-    title="Approach Using HOCs"
-    subtitle="loading and error state handling"
+    title="Approach Using Hooks"
+    subtitle="Loading and error state handling"
   />
   <Code
     code={require('!!raw-loader!./code.3.js').default}
-    focus="16,21"
+    focus="4,26"
     lang="jsx"
-    title="Approach Using HOCs"
+    title="Approach Using Hooks"
     subtitle="call removeEmployee function"
   />
   <Code
-    code={require('!!raw-loader!./code.1.js').default}
-    focus="13:21"
+    code={require('!!raw-loader!./code.js').default}
+    focus="4:9,30"
     lang="jsx"
-    title="Approach Using HOCs"
+    title="Approach Using Hooks"
   />
 </CodeSurferLayout>
 
 ---
 
-# The Good
+# The Good ✅
 
 - Fetching is encapsulated and declarative
 - Data dependencies and expressed alogside <br /> where they're used
 - All operations are in a single scope
-- Error states can be handled in a generalized manner
 
 ---
 
-# The Bad
+# The Bad 🔴
 
 - ~~SelectionSets are error-prone~~
 - ~~Multiple HOCs can produce bugs~~
 
 ---
 
-# The Meh
+# The Meh 🤷‍♀️
 
 - ~~HOCs are difficult to understand~~
 - ~~Options need to be computed far from the component~~
 - ~~Welcome back to callback hell~~
 - ~~The component hierarchy is extra deep~~
-- Loading and ~~error state~~ require boilerplate
+- Loading and error state require boilerplate

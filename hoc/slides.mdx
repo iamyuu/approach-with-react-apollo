@@ -1,35 +1,35 @@
-import { CodeSurferLayout, CodeSurferColumnLayout, Code } from 'code-surfer'
+import { CodeSurferLayout, Code } from 'code-surfer'
 
 <CodeSurferLayout>
   <Code
-    code={require('!!raw-loader!./code.0.js').default}
+    code={require('!!raw-loader!../code.0.js').default}
     lang="jsx"
     title="Approach Using HOCs"
   />
   <Code
     code={require('!!raw-loader!./code.1.js').default}
-    focus="14:20"
+    focus="13:21"
     lang="jsx"
     title="Approach Using HOCs"
-    subtitle="define query and mutation"
+    subtitle="Define query and mutation"
   />
   <Code
     code={require('!!raw-loader!./code.2.js').default}
-    focus="2:14"
+    focus="2:14,22"
     lang="jsx"
     title="Approach Using HOCs"
-    subtitle="loading and error state handling"
+    subtitle="Loading and error state handling"
   />
   <Code
     code={require('!!raw-loader!./code.3.js').default}
     focus="16,21"
     lang="jsx"
     title="Approach Using HOCs"
-    subtitle="call removeEmployee function"
+    subtitle="Call removeEmployee function"
   />
   <Code
-    code={require('!!raw-loader!./code.1.js').default}
-    focus="13:21"
+    code={require('!!raw-loader!./code.js').default}
+    focus="31:41"
     lang="jsx"
     title="Approach Using HOCs"
   />
@@ -37,14 +37,23 @@ import { CodeSurferLayout, CodeSurferColumnLayout, Code } from 'code-surfer'
 
 ---
 
-<CodeSurferColumnLayout>
-  ```js 2
-  console.log(1);
-  console.log(2);
-  ```
+# The Good ✅
 
-  # The Good
+- Fetching is encapsulated and declarative
+- Data dependencies and expressed alogside <br /> where they're used
 
-  - Fetching is encapsulated and declarative
-  - Data dependencies and expressed alogside <br /> where they're used
-</CodeSurferColumnLayout>
+---
+
+# The Bad 🔴
+
+- Selection sets are error-prone
+- Multiple HOCs can produce bugs
+
+---
+
+# The Meh 🤷‍♀️
+
+- HOCs are difficult to understand
+- Options need to be computed far from the component
+- Each API operation deepens the component hierarchy
+- Loading and error state require boilerplate
